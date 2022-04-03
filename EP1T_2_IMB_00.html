@@ -1,0 +1,120 @@
+<html>
+<head>
+    <title>Puntuable 2</title>
+    <style type="text/css">
+        body {
+            background-color: #CD5C5C;
+            border: white solid;
+            margin-left: auto;
+            margin-right: auto;
+            padding: auto;
+        }
+
+        #capa1 {
+            background: #F4A460;
+        }
+
+        h1 {
+            font-family: "Arial";
+            color: #FFFFFF;
+            font-size: 32px;
+            text-align: center;
+        }
+
+        h2 {
+            font-family: "Times";
+            color: #000080;
+            text-align: center;
+        }
+
+        p {
+            font-family: "Times";
+            color: #000080;
+            text-align: center;
+        }
+
+        textarea {
+            width: 500px;
+            height: 250px;
+        }
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    </style>
+</head>
+<body>
+<hr>
+<br>
+<h1> Formulario de Venta </h1>
+<br>
+<hr>
+<form method="POST" action="mailto:atolon@fundacionsafa.es" target="_blank">
+    <div id="capa1">
+        <h2> Productos </h2>
+        <table border align="center">
+            <tr>
+                <td><b> Sel. </b></td>
+                <td><b> Portada </b></td>
+                <td><b> Artista </b></td>
+                <td><b> Álbum </b></td>
+                <td><b> Precio </b></td>
+            </tr>
+            <tr>
+                <td><label><input type="checkbox"></label></td>
+                <td>
+                    <center><a href="https://es.wikipedia.org/wiki/Javier_Ruibal"><img src="imagen1.jpg"></a></center>
+                </td>
+                <td> Javier Ruibal</td>
+                <td> La piel de Sara</td>
+                <td> 17.85 €</td>
+            </tr>
+            <tr>
+                <td><label><input type="checkbox"></label></td>
+                <td>
+                    <center><a href="https://www.oxfamintermon.org/es"><img src="imagen2.jpg"></a></center>
+                </td>
+                <td> Mari Kvien Brunvoll</td>
+                <td> Bajazz</td>
+                <td> 15.25 €</td>
+            </tr>
+            <tr>
+                <td><label><input type="checkbox"></label></td>
+                <td>
+                    <center><a href="https://es.greenpeace.org/es/"><img src="imagen3.jpg"></a></center>
+                </td>
+                <td> Anna Maria Jopek</td>
+                <td> Secret</td>
+                <td> 19.35 €</td>
+            </tr>
+        </table>
+    </div>
+    <div id="capa1">
+        <h2> Datos Personales </h2><br>
+        <p><label>Nombre y Apellidos: <input type="text" name="nombre" size="40"></label><br>
+            <label>Dirección: <input type="text" name="direccion" size="30"></label><br>
+            <label>Localidad: <input type="text" name="localidad" size="20"></label><label>C.P.: <input type="text"
+                                                                                                        name="CP"
+                                                                                                        size="5"></label><br>
+            Nacionalidad: <label><input type="radio" name="esp">Español</label><label><input type="radio" name="ext">Extranjero</label>
+        </p></div>
+    <div id="capa1">
+        <h2> Formas de pago </h2><br>
+        <p><label>Tipo Tarjeta: <select name="tarjeta">
+            <option>VISA
+            <option>MasterCard
+            <option>American Exp
+        </select><br>
+            <label>NºTarjeta: <input type="text" name="tarjeta" size="25"></label><label>CVV: <input type="text"
+                                                                                                     name="nombre"
+                                                                                                     size="3"></label><br>
+            <label>Importe: <input type="text" name="importe" size="7"></label></p>
+    </div>
+    <br>
+    <center><label><textarea name="mensaje" placeholder="Indícanos cómo podemos mejorar"></textarea></label><br><br>
+        <input type="submit" value="Enviar Datos">
+        <input type="reset" value="Resetear"></center>
+</form>
+</body>
+</html>
